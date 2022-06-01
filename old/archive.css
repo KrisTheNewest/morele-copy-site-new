@@ -1,0 +1,81 @@
+/* .fontColor:hover {
+    
+} */
+/* .accordion-header {
+    border: 2px solid transparent !important;
+} */
+ /*.accordion-header:focus {
+    border-color: transparent !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 .25rem rgb(77, 20, 0) !important; 
+}*/
+/* .accordion-button:not(.collapsed) {
+    color: orangered !important;
+    background-color: rgb(253, 194, 173) !important;
+} */
+/* .accordion-header:hover {
+    border: 2px solid orangered !important;
+} */
+/* .accordion-body {
+    border: 2px solid orangered !important;
+} */
+/* .accordion.accordion-flush .accordion-button.collapsed:hover {
+    color: orangered;
+    border: 2px solid transparent !important
+}
+.accordion.accordion-flush .accordion-button.collapsed {
+    border: transparent !important
+} */
+.list-group > a {
+    border: 2px solid transparent !important;
+    /* padding: 2px; */
+}
+.list-group > a:hover {
+    border: 2px solid orangered !important;
+    color: orangered;
+}
+/* .card {
+    border-radius: 0%;
+    color: coral
+} */
+/* .cat {
+    color: orangered;
+    padding-left: 2%;
+}
+.cat > li {
+    padding: 5px;
+    border: solid orangered;
+    display: table;
+}
+.list-group li:nth-child(){
+    border-top: 0 none;
+  } */
+  /* .list-group-item {
+    border-top-width: 0 !important;
+  } */
+body {
+    background-color: black;
+    color: cornsilk;
+}
+/* p {
+    color: orangered;
+}
+.logo {
+    height: 20px;
+}
+.nav-text {
+    color: #ff503c;
+    font-weight: bold;
+    font-size:large
+} */
+.hamburger {
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+}
+/* .d-flex.search-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */

@@ -1,0 +1,186 @@
+
+
+@font-face {
+    font-family: 'Comforter';
+    src: url('./Comforter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.box{
+    width:100px; height:80px;  
+    border:solid 3px rgb(255, 0, 0);
+    border-color:transparent transparent rgb(255, 0, 0) rgb(255, 0, 0);
+    border-radius: 250px 100px 100px 0px;
+  }
+.graph {
+    width: 260px; 
+    height: 100px;  
+    border: solid 10px rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0) transparent transparent transparent;
+    border-radius: 50%/100px 100px 0 0;
+    rotate: 110deg;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+
+/* .graph:before {
+    height:20px;
+    width: 10px;
+    border: 5px solid orange;
+    border-radius: 30px 30px 0px 0px /75px 75px 0px 0px ; 
+    display: block;
+    content: "";
+    border-bottom:none;
+    position:relative;
+    top: -9px;
+    left: -12px;
+    rotate: 110deg;
+} */
+.cover {
+    object-fit: cover;
+  }
+.xyz {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ping {
+    height: 10px;
+    width: 100px;
+    /* margin: 5px; */
+    background-color: blue;
+    /* bottom: 0; */
+    /* left: 100px; */
+    display: inline-block;
+    /* position:  absolute; */
+  }
+  .testcont {
+    position: relative;
+  }
+  .testbuttonL:hover {
+    background-color: rgba(255, 255, 255, .5);
+  }
+  .testbuttonR:hover {
+    background-color: rgba(255, 255, 255, .5);
+  }
+  .testbuttonL {
+    height: 400px;
+    width: 100px;
+    background-color: transparent;
+    position:  absolute;
+    top: 0;
+    left: 8px;
+  }
+  .testbuttonR {
+    height: 400px;
+    width: 100px;
+    background-color: transparent;
+    position:  absolute;
+    top: 0;
+    right: 8px;
+  }
+.hidable {
+    display: none;
+}
+.cnt {
+    display: flex;
+    justify-content: center;
+}
+.imgcntflex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* .imgcnt {
+    display: block;
+    margin: 0 auto;
+} */
+
+@media only screen and (min-width : 992px) {
+    .floatie {
+        /* display: block; */
+        position: sticky; bottom: 10px;
+        /* float: right; */
+        margin-left: 95%;
+        /* right: 5px; */
+        /* float: right; */
+    }
+    .fill {
+        display: block;
+    }
+}
+@media only screen and (max-width : 991px) {
+    .floatie {
+        display: none;
+    }
+    .fill {
+        display: none;
+    }
+    
+}
+.autofillbtn {
+    height: 88px;
+}
+.offset {
+    transform: translate(33.333vw, 1px);
+}
+/* @media only screen and (min-width : 1377px) {
+    .offset {
+        transform: translate(440px, 1px) !important;
+    }
+}
+@media only screen and (max-width : 1376px) {
+    .offset {
+        transform: translate(380px, 1px) !important;
+    }
+}
+@media only screen and (min-width : 1121px) {
+    .offset {
+        transform: translate(440px, 1px) !important;
+    }
+}
+@media only screen and (max-width : 1120px) {
+    .offset {
+        transform: translate(380px, 1px) !important;
+    }
+} */
+
+.override::after {
+    /* border-bottom: 0 !important; */
+    content: none !important;
+}
+
+.cart {
+    position: relative;
+    right: 10vw;
+    bottom: 10vw;
+    background-color: deeppink;
+    height: 10vw;
+    width: 10vw;
+    /* display: none; */
+}
+.new {
+    color: crimson;
+}
+
+.del {
+    text-decoration: line-through;
+}
+
+header  {
+    background-color: blueviolet;
+}
+/* .dropdown button {
+    border-radius: 0% !important;
+} */
+/* header h1 {
+    text-align: center;
+} */
+body {
+    background-color: black;
+    /* color: cornsilk; */
+}
