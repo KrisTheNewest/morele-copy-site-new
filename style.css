@@ -99,7 +99,40 @@
     display: block;
     margin: 0 auto;
 } */
+.fuckingpain {
+    height: 10%;
+}
 
+.autofillbtn {
+    border-radius: 0;
+    background-color: black;
+    color: white;
+    /* text-align:center  */
+    
+}
+.autofillbtn:hover {
+    color: blueviolet;
+}
+/* .offset {
+    right: ;
+} */
+@media only screen and (min-width : 1400px) {
+    .offset {
+        transform: translate(440px, 1px) !important;
+    }
+}
+@media only screen and (max-width : 1399px) {
+    .offset {
+        transform: translate(380px, 1px) !important;
+    }
+}
+@media only screen and (max-width : 1199px) {
+    .offset {
+        transform: translate(320px, 1px) !important;
+    }.fuckingpain {
+        height: 32px;
+    }
+}
 @media only screen and (min-width : 992px) {
     .floatie {
         /* display: block; */
@@ -112,6 +145,7 @@
     .fill {
         display: block;
     }
+
 }
 @media only screen and (max-width : 991px) {
     .floatie {
@@ -120,30 +154,23 @@
     .fill {
         display: none;
     }
-    
 }
-.autofillbtn {
-    height: 88px;
-}
-.offset {
-    transform: translate(33.333vw, 1px);
-}
-/* @media only screen and (min-width : 1377px) {
+/* @media only screen and (min-width : 768px) {
     .offset {
         transform: translate(440px, 1px) !important;
     }
 }
-@media only screen and (max-width : 1376px) {
+@media only screen and (max-width : 767px) {
     .offset {
         transform: translate(380px, 1px) !important;
     }
 }
-@media only screen and (min-width : 1121px) {
+@media only screen and (min-width : 576px) {
     .offset {
         transform: translate(440px, 1px) !important;
     }
 }
-@media only screen and (max-width : 1120px) {
+@media only screen and (max-width : 575px) {
     .offset {
         transform: translate(380px, 1px) !important;
     }
@@ -180,7 +207,7 @@ header  {
 /* header h1 {
     text-align: center;
 } */
-body {
+/* body {
     background-color: black;
-    /* color: cornsilk; */
-}
+    color: cornsilk;
+}*/

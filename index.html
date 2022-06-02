@@ -10,161 +10,191 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
       crossorigin="anonymous">  
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="style.css"> 
 </head>
-<body>
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="./pics/morele.svg" alt="" height="30" class="d-inline-block align-text-top">
-      <div class="nav-text d-inline-block align-text-top">?</div> 
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="multi-collapse collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+<body class="bg-dark">
 
-<main class="container">
- 
-  <header class="row">
-    <div class="d-none d-xl-block">
-      <h1><i class="bi-alarm"></i> hello world</h1>
+  <nav class="navbar sticky-top navbar-expand navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./pics/morele.svg" alt="" height="30" class="d-inline-block align-text-top">
+        <div class="nav-text d-inline-block align-text-top">?</div> 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="multi-collapse collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-  </header>
+  </nav>
+  <nav class="navbar fixed-bottom navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fixed bottom</a>
+    </div>
+  </nav>
+<main class="container" style="background-color: blueviolet;">
+
   
-  <div class="row">
-    <div class="col-lg-4 d-none d-sm-block p-0">
-      <div class="dropdown dropend">
-        <button class="btn btn-light dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Komputery
+  <div class="row my-1">
+    <div class="col-lg-4 d-none d-lg-block p-0 pe-2">
+      <div class="btn-group dropup w-100 fuckingpain" >
+        <button class="btn autofillbtn"  type="button" id="dropdownMenuButton10" aria-expanded="false" style="width: 80%; border-right: 2px solid blueviolet;">
+          last
         </button>
-        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+        <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="offset dropdown-menu" aria-labelledby="dropdownMenuButton10">
           <li><a class="dropdown-item" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
       </div>
-      <div class="dropdown">
-        <button class="btn btn-light dropdown-toggle w-100 " type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-          Podzespoły
+      <div class="btn-group dropup w-100 fuckingpain" >
+        <button class="btn autofillbtn"  type="button" id="dropdownMenuButton10" aria-expanded="false" style="width: 80%; border-right: 2px solid blueviolet;">
+          last
         </button>
-        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton2">
+        <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="offset dropdown-menu" aria-labelledby="dropdownMenuButton10">
           <li><a class="dropdown-item" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
       </div>
-      <div class="dropdown">
-        <button class="btn btn-light dropdown-toggle w-100" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-          Laptopy
+      <div class="btn-group dropup w-100 fuckingpain" >
+        <button class="btn autofillbtn"  type="button" id="dropdownMenuButton10" aria-expanded="false" style="width: 80%; border-right: 2px solid blueviolet;">
+          last
         </button>
-        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton3">
+        <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="offset dropdown-menu" aria-labelledby="dropdownMenuButton10">
           <li><a class="dropdown-item" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
       </div>
-      <div class="dropdown">
-        <button class="btn btn-light dropdown-toggle w-100" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
-          Telewizory
+      <div class="btn-group dropup w-100 fuckingpain" >
+        <button class="btn autofillbtn"  type="button" id="dropdownMenuButton10" aria-expanded="false" style="width: 80%; border-right: 2px solid blueviolet;">
+          last
         </button>
-        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton4">
+        <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="offset dropdown-menu" aria-labelledby="dropdownMenuButton10">
           <li><a class="dropdown-item" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
       </div>
-      <div class="dropdown">
-        <button class="btn btn-light dropdown-toggle w-100" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
-          Audio
+      <div class="btn-group dropup w-100 fuckingpain" >
+        <button class="btn autofillbtn"  type="button" id="dropdownMenuButton10" aria-expanded="false" style="width: 80%; border-right: 2px solid blueviolet;">
+          last
         </button>
-        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton5">
+        <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="offset dropdown-menu" aria-labelledby="dropdownMenuButton10">
           <li><a class="dropdown-item" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
       </div>
-      <div class="dropdown">
-        <button class="btn btn-light dropdown-toggle w-100" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
-          Audio
+      <div class="btn-group dropup w-100 fuckingpain" >
+        <button class="btn autofillbtn"  type="button" id="dropdownMenuButton10" aria-expanded="false" style="width: 80%; border-right: 2px solid blueviolet;">
+          last
         </button>
-        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton6">
+        <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="offset dropdown-menu" aria-labelledby="dropdownMenuButton10">
           <li><a class="dropdown-item" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
       </div>
-      <div class="dropdown">
-        <button class="btn btn-light dropdown-toggle w-100" type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false">
-          Audio
+      <div class="btn-group dropup w-100 fuckingpain" >
+        <button class="btn autofillbtn"  type="button" id="dropdownMenuButton10" aria-expanded="false" style="width: 80%; border-right: 2px solid blueviolet;">
+          last
         </button>
-        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton7">
+        <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="offset dropdown-menu" aria-labelledby="dropdownMenuButton10">
           <li><a class="dropdown-item" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
       </div>
-      <div class="dropdown">
-        <button class="btn btn-light dropdown-toggle w-100" type="button" id="dropdownMenuButton8" data-bs-toggle="dropdown" aria-expanded="false">
-          Audio
+      <div class="btn-group dropup w-100 fuckingpain" >
+        <button class="btn autofillbtn"  type="button" id="dropdownMenuButton10" aria-expanded="false" style="width: 80%; border-right: 2px solid blueviolet;">
+          last
         </button>
-        <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton8">
+        <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="offset dropdown-menu" aria-labelledby="dropdownMenuButton10">
           <li><a class="dropdown-item" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
       </div>
-      <div class="dropdown dropup">
-        <button class="btn btn-light dropdown-toggle w-100" type="button" id="dropdownMenuButton9" data-bs-toggle="dropdown" aria-expanded="false" >
-          Audio
+      <div class="btn-group dropup w-100 fuckingpain" >
+        <button class="btn autofillbtn"  type="button" id="dropdownMenuButton10" aria-expanded="false" style="width: 80%; border-right: 2px solid blueviolet;">
+          last
         </button>
-        <ul class="dropdown-menu w-100 offset" aria-labelledby="dropdownMenuButton9">
+        <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="offset dropdown-menu" aria-labelledby="dropdownMenuButton10">
           <li><a class="dropdown-item" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
       </div>
-      <div class="dropdown dropup">
-        <button class="btn btn-light dropdown-toggle w-100" type="button" id="dropdownMenuButton10" data-bs-toggle="dropdown" aria-expanded="false">
-          Audio
+      <div class="btn-group dropup w-100 fuckingpain" >
+        <button class="btn autofillbtn"  type="button" id="dropdownMenuButton10" aria-expanded="false" style="width: 80%; border-right: 2px solid blueviolet;">
+          last
         </button>
-        <ul class="dropdown-menu w-100 offset" aria-labelledby="dropdownMenuButton10">
+        <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="offset dropdown-menu" aria-labelledby="dropdownMenuButton10">
           <li><a class="dropdown-item" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
       </div>
     </div>
-    <div class="col-lg-8 col-sm-12" style="background-color: blueviolet;">
+    <div class="col-lg-8 col-12 p-0" style="background-color: blueviolet;">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -173,13 +203,13 @@
         </div>
          <a href="./product.html" ><div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./pics/151-840x400.jpg" class="d-block w-100" alt="...">
+            <img src="./pics/410-900x500_cr.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./pics/455-840x400.jpg" class="d-block w-100" alt="...">
+            <img src="./pics/448-900x500_cr.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./pics/290-840x400.jpg" class="d-block w-100" alt="...">
+            <img src="./pics/1033-900x500_cr.jpg" class="d-block w-100" alt="...">
           </div>
         </div></a>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -194,17 +224,17 @@
     </div>
   </div>  
   
-  <div class="row my-1" style="background-color: white;">
+  <div class="row my-1 text-white" style="background-color: black;">
     <h1>Featured</h1>
   </div>
-  <div class="row my-1 d-none d-sm-block"> 
+  <div class="row my-1 d-none d-sm-block" > 
     <div class="card-group p-0">
-      <div class="card">
+      <div class="card  text-white" style="background-color: black; border-color: blueviolet;">
         <img src="https://picsum.photos/300/300" class="card-img-top img-fluid cut" alt="...">
         <div class="card-img-overlay" style="height: 1px; width: 1px; right: 0;">
           <h4 style="text-align: right;"><span class="badge bg-danger text-dark">NEW</span></h4>
         </div>
-        <div class="card-body">
+        <div class="card-body" style="background-color: black;">
           <h5 class="card-title">Hasegawa B05 Sea Harrier FRS MK.1</h5>
           <p class="card-text"> <span class="del">39 zł</span> <span class="new h3">29 zł</span></p>
         </div>
@@ -212,9 +242,9 @@
           <small class="text-muted">Last updated 3 mins ago</small>
         </div>
       </div>
-      <div class="card">
+      <div class="card  text-white" style="background-color: black; border-color: blueviolet;">
         <img src="./pics/andre-tan-8yesL5ZPjIU-unsplash_cr.jpg" class="card-img-top img-fluid cut" alt="...">
-        <div class="card-body">
+        <div class="card-body">                                       
           <div class="card-img-overlay" style="height: 1px; width: 1px; right: 0;">
             <h4 style="text-align: right;"><span class="badge btn-success text-dark">DDR5!</span></h4>
           </div>
@@ -226,7 +256,7 @@
           <small class="text-muted"><a href="" style="text-decoration: none;">>>> Komputery</a></small>
         </div>
       </div>
-      <div class="card">
+      <div class="card  text-white" style="background-color: black; border-color: blueviolet;">
         <img src="https://picsum.photos/300/300" class="card-img-top img-fluid cut" alt="...">
         <div class="card-img-overlay" style="height: 1px; width: 1px; right: 0;">
           <h4 style="text-align: right;"><span class="badge bg-danger text-dark">NEW</span></h4>
@@ -239,7 +269,7 @@
           <small class="text-muted">Last updated 3 mins ago</small>
         </div>
       </div>
-      <div class="card">
+      <div class="card  text-white" style="background-color: black; border-color: blueviolet;">
         <img src="https://picsum.photos/300/300" class="card-img-top img-fluid cut" alt="...">
         <div class="card-img-overlay" style="height: 1px; width: 1px; right: 0;">
           <h4 style="text-align: right;"><span class="badge bg-danger text-dark">NEW</span></h4>
@@ -252,7 +282,7 @@
           <small class="text-muted">Last updated 3 mins ago</small>
         </div>
       </div>
-      <div class="card">
+      <div class="card text-white" style="background-color: black; border-color: blueviolet;">
         <img src="https://picsum.photos/300/300" class="card-img-top img-fluid cut" alt="...">
         <div class="card-img-overlay" style="height: 1px; width: 1px; right: 0;">
           <h4 style="text-align: right;"><span class="badge bg-danger text-dark">NEW</span></h4>
@@ -267,14 +297,14 @@
       </div>
     </div>
   </div>
-  <div class="row d-block d-sm-none">
+  <div class="row my-1 d-block d-sm-none">
     <div class="card-group p-0">
       <div class="card bg-dark text-white">
         <img src="./pics/intel.jpg" class="card-img cover" alt="..." style="max-height: 150px; object-fit: cover;">
         <div class="card-img-overlay">
           <h1 class="card-title badge bg-dark bg-opacity-75">ProGamer v2 i5-12600 RTX 3070 Ti 32GB DDR5</h1>
           <p class="card-text"> <span class="fs-5 badge bg-danger">9980 zł</span></p>
-          <a href="#" class="btn btn-dark float-end">See details...</a>
+          <a href="#" class="btn float-end">See details...</a>
         </div>
         <div class="card-footer">
           <small class="text-muted"><a href="" style="text-decoration: none;">>>> Komputery</a></small>
@@ -285,7 +315,7 @@
         <div class="card-img-overlay">
           <h1 class="card-title badge bg-dark bg-opacity-75">ProGamer v2 i5-12600 RTX 3070 Ti 32GB DDR5</h1>
           <p class="card-text"> <span class="fs-5 badge bg-danger">9980 zł</span></p>
-          <a href="#" class="btn btn-dark float-end">See details...</a>
+          <a href="#" class="btn float-end">See details...</a>
         </div>
         <div class="card-footer">
           <small class="text-muted"><a href="" style="text-decoration: none;">>>> Komputery</a></small>
@@ -296,7 +326,7 @@
         <div class="card-img-overlay">
           <h1 class="card-title badge bg-dark bg-opacity-75">ProGamer v2 i5-12600 RTX 3070 Ti 32GB DDR5</h1>
           <p class="card-text"> <span class="fs-5 badge bg-danger">9980 zł</span></p>
-          <a href="#" class="btn btn-dark float-end">See details...</a>
+          <a href="#" class="btn float-end">See details...</a>
         </div>
         <div class="card-footer">
           <small class="text-muted"><a href="" style="text-decoration: none;">>>> Komputery</a></small>
@@ -304,10 +334,10 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row mt-1">
     <div class="accordion px-0" id="accordionPanelsStayOpenExample">
       <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingOne"> <div style="background-image: url(./pics/blik.svg); background-position: center right; background-repeat: no-repeat; background-size: auto 48px; box-shadow: 0 0 8px 8px white inset;"></div>
+        <h2 class="accordion-header" style="background-color: gray-900;" id="panelsStayOpen-headingOne">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" >
             Accordion Item #1
           </button>
@@ -349,7 +379,7 @@
   </div> -->
   <div class="floatie" id="floatieID" style="z-index: 100000;">
     <div class="btn-group dropup">
-      <button type="button" class="btn btn-primary dropdown-toggle override" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="78,0">
+      <button type="button" class="btn btn-primary dropdown-toggle override" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="78,0" style="background-color: blueviolet; border: 2px solid violet">
         <h1><i class="bi bi-basket2"></i></h1>
           <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
           99+
@@ -390,7 +420,7 @@
     </div>
   </div>
   <div class="fill" style="position: relative;">
-    <div style="position: absolute; color: red; bottom: 10px; font-size: 2em; max-height: 70px; width: auto;">VISIT US</div> <div style="color: red; position: absolute; bottom: 10px; right: 100px; font-size: 2em; max-height: 70px;">HEWWO</div>
+    <div style="position: absolute; color: black; bottom: 10px; font-size: 2em; max-height: 70px; width: auto;">VISIT US</div> <div style="color: black; position: absolute; bottom: 10px; right: 100px; font-size: 2em; max-height: 70px;">HEWWO</div>
     <!-- <div class="graph" style="position: absolute;"></div> -->
   </div>
   
