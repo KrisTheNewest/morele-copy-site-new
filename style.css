@@ -6,6 +6,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 .box{
     width:100px; height:80px;  
     border:solid 3px rgb(255, 0, 0);
@@ -22,6 +23,190 @@
     margin-top: 10px;
     margin-left: -40px;
 }
+/* .dropdown-item {
+    height: inherit;
+} */
+.flip::after {
+    transform: rotate(45deg);
+}
+.fuckingpain {
+    height: 10%;
+}
+
+.dropListEven.show {
+ height: 300%; max-height: fit-content; padding: 0px !important;  display: flex; flex-direction: column; align-items: stretch; background-color: black;
+}
+.purplebtn:not(.collapsed) {
+    background-color: blueviolet;
+    color: white;
+    border-color: blueviolet;
+    
+}
+.purplebtn:not(.collapsed) span {
+    background-color: black;
+    /* color: white;
+    border-color: blueviolet; */
+    
+}
+.acc-white {
+    background-color: blueviolet;
+   /* border-width: 0px 2px 0px 2px;  top right bottom left */
+}
+.purplebtn.collapsed {
+    background-color: black;
+    color: white;
+    border-color: blueviolet;
+}
+.purplebtn:focus {
+    box-shadow: none !important;
+}
+.dropListEven .dropdown-item:first-child {
+    border-top: 2px solid blueviolet;
+}
+
+.dropListEven .dropdown-item:last-child {
+    border-bottom: 2px solid blueviolet;
+}
+
+
+.dropListEven .dropdown-item {
+    border-right: 2px solid blueviolet;
+}
+
+/* .dropListEven > .dropdown-item {
+    box-sizing: border-box;
+} */
+
+.autofillbtn:hover {
+    color: blueviolet;
+}
+
+.autofillbtn:focus {
+    box-shadow: none !important;
+    color: blueviolet;
+}
+/* .autofillbtn:active {
+    color: blueviolet;
+} */
+.smallButton {
+    border-right: 2px solid blueviolet;
+}
+.autofillbtn {
+    border-radius: 0;
+    background-color: black;
+    color: white;
+    border-width: 0px 2px 0px 0px; /* top right bottom left */
+    border-style: solid solid solid solid;
+    border-color: blueviolet blueviolet blueviolet blueviolet;
+    /* border-right: 2px solid blueviolet; */
+    /* text-align:center  */    
+}
+
+/* .dropdown-menu.show {
+    border-color: blueviolet;
+    background-color: white;
+} */
+.dropdown-item {
+    color: white;
+}
+.smallButton:focus {
+    border-right: 2px solid transparent;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: transparent;
+    color: blueviolet;
+}
+
+@media only screen and (min-width : 1400px) {
+    .offset {
+        transform: translate(439px, -1px) !important;
+    }
+    .offsetSL {
+        transform: translate(439px, -1px) !important;
+    }
+    .offsetF {
+        transform: translate(439px, -3px) !important;
+    }
+    .offsetR {
+        transform: translate(439px, 3px) !important;
+    }
+    
+}
+@media only screen and (max-width : 1399px) {
+    .offset {
+        transform: translate(379px, -1px) !important;
+    }
+    .offsetSL {
+        transform: translate(439px, -1px) !important;
+    }
+    .offsetF {
+        transform: translate(379px, -3px) !important;
+    }
+    .offsetR {
+        transform: translate(379px, 3px)  !important;
+    }
+    
+}
+@media only screen and (max-width : 1199px) {
+    .offset {
+        transform: translate(319px, -1px) !important;
+    }
+    .offsetSL {
+        transform: translate(439px, -1px) !important;
+    }
+    .offsetF {
+        transform: translate(439px, -3px) !important;
+    }
+    .offsetR {
+        transform: translate(319px, 3px) !important;
+    }
+    
+    .fuckingpain {
+        height: 32px;
+    }
+    .autofillbtn {
+        line-height: 0px;
+    }
+
+    .dropListEven > .dropdown-item {
+        max-height: 32px;
+    }
+}
+@media only screen and (min-width : 992px) {
+    .floatie {
+        /* display: block; */
+        position: sticky; bottom: 10px;
+        /* float: right; */
+        margin-left: 95%;
+        /* right: 5px; */
+        /* float: right; */
+    }
+    .fill {
+        display: block;
+    }
+
+}
+@media only screen and (max-width : 991px) {
+    .floatie {
+        display: none;
+    }
+    .fill {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* .graph:before {
     height:20px;
@@ -95,84 +280,33 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
 /* .imgcnt {
     display: block;
     margin: 0 auto;
 } */
-.fuckingpain {
-    height: 10%;
-}
-
-.autofillbtn {
-    border-radius: 0;
-    background-color: black;
-    color: white;
-    /* text-align:center  */
-    
-}
-.autofillbtn:hover {
-    color: blueviolet;
-}
-/* .offset {
+/* #offset {
     right: ;
 } */
-@media only screen and (min-width : 1400px) {
-    .offset {
-        transform: translate(440px, 1px) !important;
-    }
-}
-@media only screen and (max-width : 1399px) {
-    .offset {
-        transform: translate(380px, 1px) !important;
-    }
-}
-@media only screen and (max-width : 1199px) {
-    .offset {
-        transform: translate(320px, 1px) !important;
-    }.fuckingpain {
-        height: 32px;
-    }
-}
-@media only screen and (min-width : 992px) {
-    .floatie {
-        /* display: block; */
-        position: sticky; bottom: 10px;
-        /* float: right; */
-        margin-left: 95%;
-        /* right: 5px; */
-        /* float: right; */
-    }
-    .fill {
-        display: block;
-    }
 
-}
-@media only screen and (max-width : 991px) {
-    .floatie {
-        display: none;
-    }
-    .fill {
-        display: none;
-    }
-}
 /* @media only screen and (min-width : 768px) {
-    .offset {
-        transform: translate(440px, 1px) !important;
+    #offset {
+        transform: translate(440px) !important;
     }
 }
 @media only screen and (max-width : 767px) {
-    .offset {
-        transform: translate(380px, 1px) !important;
+    #offset {
+        transform: translate(380px) !important;
     }
 }
 @media only screen and (min-width : 576px) {
-    .offset {
-        transform: translate(440px, 1px) !important;
+    #offset {
+        transform: translate(440px) !important;
     }
 }
 @media only screen and (max-width : 575px) {
-    .offset {
-        transform: translate(380px, 1px) !important;
+    #offset {
+        transform: translate(380px) !important;
     }
 } */
 
