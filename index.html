@@ -59,13 +59,13 @@
       <button class="btn btn-primary  flex-fill autofillbtn" style="line-height: normal; border-top: 2px solid blueviolet;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCategories" >Categories </button>
       <button class="btn btn-primary  flex-fill autofillbtn " style="line-height: normal; border-top: 2px solid blueviolet; border-right: none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" >Cart</button>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end  text-white bg-dark" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
         <h5 id="offcanvasRightLabel">Cart</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="offcanvas-body">
-        <table class="table">
+      <div class="offcanvas-body bg-dark text-white">
+        <table class="table text-white">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -96,144 +96,154 @@
         </table>
       </div>
     </div>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCategories" aria-labelledby="offcanvasCategories">
+    <div class="offcanvas offcanvas-start text-white bg-dark" tabindex="-1" id="offcanvasCategories" aria-labelledby="offcanvasCategories">
       <div class="offcanvas-header">
         <h5 id="offcanvasCategoriesLabel">Categories</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="offcanvas-body">
-
-          <div class="btn-group dropend w-100 fuckingpain">
-            <button class="btn autofillbtn"  type="button"  aria-expanded="false" style="width: 80%; ">
-              Komputerssssssssss
-            </button>
-            <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split boopR smallButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
-              <span class="visually-hidden ">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu dropListEven w-75 offsetF" aria-labelledby="dropdownMenuButton3a" >
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;">Another action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Something else here</a>
+      <div class="offcanvas-body px-0  pt-0" >
+        <div class="accordion accordion-flush " id="accordionFlushExample" style="border-left: 2px solid blueviolet; border-top: 2px solid blueviolet;">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body" style="background-color: black;">
+                <a class="dropdown-item test" href="#" >Action</a>
+                <a class="dropdown-item test" href="#" >Another action</a>
+                <a class="dropdown-item test" href="#" >Something else here</a>
+              </div>
             </div>
           </div>
-          <div class="btn-group dropend w-100 fuckingpain" >
-            <button class="btn autofillbtn"  type="button"  aria-expanded="false" style="width: 80%; ">
-              Podzespoły
-            </button>
-            <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split boopR smallButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
-              <span class="visually-hidden">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu dropListEven w-75 offset" aria-labelledby="dropdownMenuButton3a" >
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;">Another action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Something else here</a>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body" style="background-color: black;">
+                <a class="dropdown-item test" href="#" >Action</a>
+                <a class="dropdown-item test" href="#" >Another action</a>
+                <a class="dropdown-item test" href="#" >Something else here</a>
+              </div>
             </div>
           </div>
-          <div class="btn-group dropend w-100 fuckingpain" >
-            <button class="btn autofillbtn"  type="button" id="dropdownMenuButton3a" aria-expanded="false" style="width: 80%; ">
-              Laptopy here now
-            </button>
-            <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split boopR smallButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
-              <span class="visually-hidden">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu dropListEven w-75 offset" aria-labelledby="dropdownMenuButton3a" >
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;">Another action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Something else here</a>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body" style="background-color: black;">                
+                <a class="dropdown-item test" href="#" >Action</a>
+                <a class="dropdown-item test" href="#" >Another action</a>
+                <a class="dropdown-item test" href="#" >Something else here</a>
+              </div>
             </div>
           </div>
-          <div class="btn-group dropend w-100 fuckingpain" >
-            <button class="btn autofillbtn"  type="button" aria-expanded="false" style="width: 80%; ">
-              Konsole
-            </button>
-            <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split boopR smallButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
-              <span class="visually-hidden">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu dropListEven w-75 offset" aria-labelledby="dropdownMenuButton4a" >
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;">Another action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Something else here</a>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #4
+              </button>
+            </h2>
+            <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="background-color: black;">                
+                <a class="dropdown-item test" href="#" >Action</a>
+                <a class="dropdown-item test" href="#" >Another action</a>
+                <a class="dropdown-item test" href="#" >Something else here</a>
+              </div>
             </div>
           </div>
-          <div class="btn-group dropend w-100 fuckingpain" >
-            <button class="btn autofillbtn"  type="button"  aria-expanded="false" style="width: 80%; ">
-              Telewizory here
-            </button>
-            <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split boopR smallButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
-              <span class="visually-hidden">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu dropListEven w-75 offset" aria-labelledby="dropdownMenuButton5a" >
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;">Another action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Something else here</a>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading5">
+              <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #5
+              </button>
+            </h2>
+            <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="background-color: black;">                
+                <a class="dropdown-item test" href="#" >Action</a>
+                <a class="dropdown-item test" href="#" >Another action</a>
+                <a class="dropdown-item test" href="#" >Something else here</a>
+              </div>
             </div>
           </div>
-          <div class="btn-group dropend w-100 fuckingpain" >
-            <button class="btn autofillbtn"  type="button"  aria-expanded="false" style="width: 80%; ">
-              Audio
-            </button>
-            <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split boopR smallButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
-              <span class="visually-hidden">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu dropListEven w-75 offset" aria-labelledby="dropdownMenuButton6a" >
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;">Another action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Something else here</a>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading6">
+              <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #6
+              </button>
+            </h2>
+            <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="background-color: black;">                
+                <a class="dropdown-item test" href="#" >Action</a>
+                <a class="dropdown-item test" href="#" >Another action</a>
+                <a class="dropdown-item test" href="#" >Something else here</a>
+              </div>
             </div>
           </div>
-          <div class="btn-group dropend w-100 fuckingpain" >
-            <button class="btn autofillbtn"  type="button"  aria-expanded="false" style="width: 80%; ">
-              AGD
-            </button>
-            <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split boopR smallButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
-              <span class="visually-hidden">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu dropListEven w-75 offset" aria-labelledby="dropdownMenuButton7a" >
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;">Another action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Something else here</a>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading7">
+              <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #7
+              </button>
+            </h2>
+            <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="background-color: black;">                
+                <a class="dropdown-item test" href="#" >Action</a>
+                <a class="dropdown-item test" href="#" >Another action</a>
+                <a class="dropdown-item test" href="#" >Something else here</a>
+              </div>
             </div>
           </div>
-          <div class="btn-group dropend w-100 fuckingpain" >
-            <button class="btn autofillbtn"  type="button"  aria-expanded="false" style="width: 80%; ">
-              Ogród
-            </button>
-            <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split boopR smallButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
-              <span class="visually-hidden">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu dropListEven w-75 offset" aria-labelledby="dropdownMenuButton8a" >
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;">Another action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Something else here</a>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading8">
+              <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #8
+              </button>
+            </h2>
+            <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="background-color: black;">                
+                <a class="dropdown-item test" href="#" >Action</a>
+                <a class="dropdown-item test" href="#" >Another action</a>
+                <a class="dropdown-item test" href="#" >Something else here</a>
+              </div>
             </div>
           </div>
-          <div class="btn-group dropup w-100 fuckingpain" >
-            <button class="btn autofillbtn"  type="button"  aria-expanded="false" style="width: 80%; ">
-              Market
-            </button>
-            <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split boopR smallButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
-              <span class="visually-hidden">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu dropListEven w-75 offsetR" aria-labelledby="dropdownMenuButton9a" >
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;">Another action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Something else here</a>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading9">
+              <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #9
+              </button>
+            </h2>
+            <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="background-color: black;">                
+                <a class="dropdown-item test" href="#" >Action</a>
+                <a class="dropdown-item test" href="#" >Another action</a>
+                <a class="dropdown-item test" href="#" >Something else here</a>
+              </div>
             </div>
           </div>
-          <div class="btn-group dropup w-100 fuckingpain" >
-            <button class="btn autofillbtn"  type="button"  aria-expanded="false" style="width: 80%;  ">
-              Last
-            </button>
-            <button type="button" class="btn autofillbtn dropdown-toggle dropdown-toggle-split boopUp smallButton" data-bs-toggle="dropdown" aria-expanded="false" style="width: 20%;">
-              <span class="visually-hidden">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu dropListEven w-75 offsetR" aria-labelledby="dropdownMenuButton10a" >
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;">Another action</a>
-              <a class="dropdown-item test" href="#" style="flex: 1;  ">Something else here</a>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading10">
+              <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #10
+              </button>
+            </h2>
+            <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="background-color: black;">                
+                <a class="dropdown-item test" href="#" >Action</a>
+                <a class="dropdown-item test" href="#" >Another action</a>
+                <a class="dropdown-item test" href="#" >Something else here</a>
+              </div>
             </div>
           </div>
-
+        </div>
       </div>
     </div>
   </nav>
@@ -608,7 +618,7 @@
 <!-- <footer class="container-fluid " style="background-color:white;"> -->
 <footer class="container pb-0" style="background-color: black; color: white;">
   <div class="row pb-0">
-    <div class="col-5 p-0" style="border-right: 2px solid blueviolet;">
+    <div class="col-12 col-lg-5 p-lg-0 footer-border-top " >
       <div class="card bg-dark text-white">
         <img src="./pics/map_dark_big.png" class="card-img" alt="...">
         <div class="card-img-overlay d-flex align-items-end ">
@@ -616,9 +626,9 @@
         </div>
       </div>
     </div>
-    <div class="col-7 pb-0" >
-      <div class="row" style="border-bottom: 2px solid blueviolet;">
-        <div class="col px-0" style="border-right: 2px solid blueviolet;">
+    <div class="col-12 col-lg-7 pb-0" >
+      <div class="row footer-border-bottom" >
+        <div class="col-12 col-lg px-0 footer-border-top" >
           <h4 class="text-end pt-3 pe-3">Morele Copy</h4>
             <ul class="list-group unified">
               <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -648,7 +658,7 @@
 
             </ul>
         </div>
-        <div class="col px-0">
+        <div class=" col-12 col-lg px-0 footer-border-top">
           <h4 class="text-end pt-3 pe-3">Morele Copy</h4>
             <ul class="list-group unified">
               <li class="list-group-item d-flex justify-content-between align-items-center">
