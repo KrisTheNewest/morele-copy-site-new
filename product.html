@@ -94,26 +94,17 @@
     </div>
   </div>
 
- <!-- <div class="cnt">
-   <button type="button" class="btn btn-success" onclick="show()">hello</button>
- </div>  -->
- <!-- <div class="hide"><img src="https://picsum.photos/2000/1000" class="imgcnt" alt="..."><button type="button" class="btn btn-primary" onclick="hide()">bye</button> </div>  -->
-    <!--  -->
-    <!-- <div style="position: absolute; left: 50%;">
-        <div style="position: relative; left: -50%; border: dotted red 1px;">
-          I am some centered shrink-to-fit content! <br />
-          tum te tum
-        </div>
-      </div> -->
-      <!-- <div style="display: flex;
-      justify-content: center;
-      align-items: center;">
-        <img src="https://picsum.photos/2000/1000" style="z-index: 5000;" alt="...">
-    </div> -->
-    <!-- <p style="text-align:center; position: absolute;"> <img src="https://picsum.photos/2000/1000" style="z-index: 5000;" alt="..."></p> -->
+
 <main class="container opener" style="background-color: blueviolet;">
+    <header class="row" style="background-color: black;">
+      <div class="col d-flex justify-content-start p-2">
+            <div class="breadcrumb-item h5"><a href="#" class="link-light">Home</a></div>
+            <div class="breadcrumb-item h5"><a href="#" class="link-light">Library</a></div>
+            <div class="breadcrumb-item active h5 text-primary" aria-current="page">Data</div>
+      </div>
+    </header>
     <div class="row">
-      <div class="col-lg-2 px-0 d-flex flex-column overflow-scroll" style=" cursor: pointer; max-height: 315px;   overflow-x: hidden !important; /* Hide horizontal scrollbar */">
+      <div class="col-lg-2 px-0 d-flex flex-column overflow-scroll" style=" cursor: pointer; max-height: 330px;   overflow-x: hidden !important; /* Hide horizontal scrollbar */">
         <img src="./pics/151-840x400.jpg" class="d-block w-100" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active">
 
         <img src="./pics/455-840x400.jpg" class="d-block w-100" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1">
@@ -202,28 +193,124 @@
         </div> 
       </div>
     </div>  
-    <!-- <div class="row">
-      <div class="col-3">
-        <select class="form-select" aria-label="Default select example">
-          <option selected>1</option>
-          <option value="1">2</option>
-          <option value="2">3</option>
-          <option value="3">4</option>
-        </select>
+
+
+    <div id="list-example" class="list-group list-group-horizontal sticky-top">
+      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-1">Item 1</a>
+      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-2">Item 2</a>
+      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-3">Item 3</a>
+      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-4">Item 4</a>
+    </div>
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      <div id="list-item-1">
+        <div class="card mb-3">
+        <img src="https://picsum.photos/1300/400" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" >Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
       </div>
-      <div class="col-9">
-        <button type="button" class="btn d-block w-100 btn-primary">Add to cart</button>
       </div>
+      <div id="list-item-2">
+        <div class="card mb-3">
+          <img src="https://picsum.photos/1300/400" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" >Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card text-white bg-success mb-3"  style="max-width: 18rem;">
+        <div class="card-header" id="list-item-3">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Success card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card text-white bg-danger mb-3"  style="max-width: 18rem;">
+        <div class="card-header" id="list-item-4">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Danger card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+      <div class="card-header" id="list-item-1">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Primary card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+      <div class="card-header" >Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Secondary card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+      <div class="card-header" >Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Success card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+      <div class="card-header" id="list-item-4">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Danger card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+      <div class="card-header" id="list-item-5">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Warning card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card text-dark bg-info mb-3" style="max-width: 18rem;">
+      <div class="card-header" id="list-item-6">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Info card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header" id="list-item-7">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Light card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+      <div class="card-header" id="list-item-8">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Dark card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
     </div> -->
-    <div class="row">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Onon.jpg" alt="">
-    </div>
-    <div class="row">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Onon.jpg" alt="">
-    </div>
-        <div class="row">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Onon.jpg" alt="">
-    </div>
+    
+
   </main>
 <!-- <div class="container-fluid">
    <div class="xyz">
