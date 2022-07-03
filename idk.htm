@@ -11,20 +11,37 @@
   <title>idk</title>
 </head>
 <style>
+.testimonial-group > .row {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.testimonial-group > .row > .col-4 {
+  display: inline-block;
+}
 
+/* Decorations */
+.col-4 { color: #fff; font-size: 48px; padding-bottom: 20px; padding-top: 18px; }
+.col-4:nth-child(3n+1) { background: #c69; }
+.col-4:nth-child(3n+2) { background: #9c6; }
+.col-4:nth-child(3n+3) { background: #69c; }
 </style>
 <body>
 
-<div style="display: flex; flex-direction: column; align-items: stretch;">
-  <div>One</div>
-  <div>Two</div>
-  <div>Three</div>
-  <div>Four</div>
-  <div>Five</div>
-  <div>Six</div>
-  <div>Seven</div>
-  <div>Eight</div>
-</div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 
+  <div class="container testimonial-group">
+    <div class="row text-center">
+      <div class="col-4">1</div><!--
+   --><div class="col-4">2</div><!--
+   --><div class="col-4">3</div><!--
+   --><div class="col-4">4</div><!--
+   --><div class="col-4">5</div><!--
+   --><div class="col-4">6</div><!--
+   --><div class="col-4">7</div><!--
+   --><div class="col-4">8</div><!--
+   --><div class="col-4">9</div>
+    </div>
+  </div>
 </body>
 </html>

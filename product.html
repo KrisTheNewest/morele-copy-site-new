@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
+  <head>
     <link rel="icon" href="ico.png" type="image/x-icon">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,9 +9,9 @@
         rel="stylesheet" 
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
         crossorigin="anonymous">  
-        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-</head>
+        <link rel="stylesheet" href="style.css"> 
+  </head>
 <body  data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="400" class="scrollspy-example bg-dark" tabindex="0" >
   <nav class="navbar sticky-top  navbar-expand-lg navbar-dark bg-dark" style="border-bottom: 2px solid blueviolet;">
     <div class="container-fluid">
@@ -52,61 +52,213 @@
       </div>
     </div>
   </nav>
+  <nav class="navbar fixed-bottom d-lg-none navbar-dark bg-dark p-0">
 
-  <div class="container hidable position-absolute top-50 start-50 translate-middle" style="background-color: yellow">
-    <div class="row">
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./pics/151-840x400.jpg" class="d-block mx-auto" style="max-width:1320px;" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./pics/290-840x400.jpg" class="d-block mx-auto" style="max-width:1320px;" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./pics/290-840x400.jpg" class="d-block mx-auto" style="max-width:1320px;" alt="...">
-          </div>
-        </div>  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" onclick="hide()" style="cursor: pointer; text-align: center;">X</span>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    <button class="btn btn-primary  flex-fill autofillbtn" style="line-height: normal; border-top: 2px solid blueviolet;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCategories" >Categories </button>
+    <button class="btn btn-primary  flex-fill autofillbtn " style="line-height: normal; border-top: 2px solid blueviolet; border-right: none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" >Cart</button>
+
+  <div class="offcanvas offcanvas-end  text-white bg-dark" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">Cart</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="row">
-      <div style="background-color: blue; cursor: pointer;">
-        <img src="./pics/151-840x400.jpg" class="d-inline-block w-25" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active">
-
-        <img src="./pics/455-840x400.jpg" class="d-inline-block w-25" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1">
-
-        <img src="./pics/290-840x400.jpg" class="d-inline-block w-25" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2">
-
-        <img src="./pics/151-840x400.jpg" class="d-inline-block w-25" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0">
-
-        <img src="./pics/455-840x400.jpg" class="d-inline-block w-25" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1">
-
-        <img src="./pics/290-840x400.jpg" class="d-inline-block w-25" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2">
+    <div class="offcanvas-body bg-dark text-white">
+      <table class="table text-white">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-start text-white bg-dark" tabindex="-1" id="offcanvasCategories" aria-labelledby="offcanvasCategories">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasCategoriesLabel">Categories</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body px-0  pt-0" >
+      <div class="accordion accordion-flush " id="accordionFlushExample" style="border-left: 2px solid blueviolet; border-top: 2px solid blueviolet;">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body" style="background-color: black;">
+              <a class="dropdown-item test" href="#" >Action</a>
+              <a class="dropdown-item test" href="#" >Another action</a>
+              <a class="dropdown-item test" href="#" >Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body" style="background-color: black;">
+              <a class="dropdown-item test" href="#" >Action</a>
+              <a class="dropdown-item test" href="#" >Another action</a>
+              <a class="dropdown-item test" href="#" >Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body" style="background-color: black;">                
+              <a class="dropdown-item test" href="#" >Action</a>
+              <a class="dropdown-item test" href="#" >Another action</a>
+              <a class="dropdown-item test" href="#" >Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseThree">
+              Accordion Item #4
+            </button>
+          </h2>
+          <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body" style="background-color: black;">                
+              <a class="dropdown-item test" href="#" >Action</a>
+              <a class="dropdown-item test" href="#" >Another action</a>
+              <a class="dropdown-item test" href="#" >Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading5">
+            <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapseThree">
+              Accordion Item #5
+            </button>
+          </h2>
+          <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body" style="background-color: black;">                
+              <a class="dropdown-item test" href="#" >Action</a>
+              <a class="dropdown-item test" href="#" >Another action</a>
+              <a class="dropdown-item test" href="#" >Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading6">
+            <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapseThree">
+              Accordion Item #6
+            </button>
+          </h2>
+          <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body" style="background-color: black;">                
+              <a class="dropdown-item test" href="#" >Action</a>
+              <a class="dropdown-item test" href="#" >Another action</a>
+              <a class="dropdown-item test" href="#" >Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading7">
+            <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapseThree">
+              Accordion Item #7
+            </button>
+          </h2>
+          <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body" style="background-color: black;">                
+              <a class="dropdown-item test" href="#" >Action</a>
+              <a class="dropdown-item test" href="#" >Another action</a>
+              <a class="dropdown-item test" href="#" >Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading8">
+            <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapseThree">
+              Accordion Item #8
+            </button>
+          </h2>
+          <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body" style="background-color: black;">                
+              <a class="dropdown-item test" href="#" >Action</a>
+              <a class="dropdown-item test" href="#" >Another action</a>
+              <a class="dropdown-item test" href="#" >Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading9">
+            <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapseThree">
+              Accordion Item #9
+            </button>
+          </h2>
+          <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body" style="background-color: black;">                
+              <a class="dropdown-item test" href="#" >Action</a>
+              <a class="dropdown-item test" href="#" >Another action</a>
+              <a class="dropdown-item test" href="#" >Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading10">
+            <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapseThree">
+              Accordion Item #10
+            </button>
+          </h2>
+          <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body" style="background-color: black;">                
+              <a class="dropdown-item test" href="#" >Action</a>
+              <a class="dropdown-item test" href="#" >Another action</a>
+              <a class="dropdown-item test" href="#" >Something else here</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
+</nav>
 
 <main class="container opener px-0" style="background-color: blueviolet;">
     <header id="list-example px-0 mx-0" class="list-group list-group-horizontal sticky-top stickybutton" style="top: 18px;">
       <a class="list-group-item list-group-item-action flex-fill" href="#list-item-1" style="border-color: blueviolet; border-width: 0px 1px 0px 0px;">Galeria</a>
-      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-2" style="border-color: blueviolet; border-width: 0px 1px 0px 1px;">Najlepsze w zestawie</a>
+      <a class="list-group-item d-none d-lg-flex list-group-item-action flex-fill" href="#list-item-2" style="border-color: blueviolet; border-width: 0px 1px 0px 1px;">Najlepsze w zestawie</a>
       <a class="list-group-item list-group-item-action flex-fill" href="#list-item-3" style=" border-color: blueviolet;border-width: 0px 1px 0px 1px;">Opis1</a>
-      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-4" style="border-color: blueviolet; border-width: 0px 1px 0px 1px;">Opis2</a>
-      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-5" style="border-color: blueviolet; border-width: 0px 1px 0px 1px;">Opis3</a>
-      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-6" style=" border-color: blueviolet;border-width: 0px 0px 0px 1px;">Opis4</a>
+      <a class="list-group-item d-none d-lg-block list-group-item-action flex-fill" href="#list-item-4" style="border-color: blueviolet; border-width: 0px 1px 0px 1px;">Opis2</a>
+      <a class="list-group-item d-none d-lg-block list-group-item-action flex-fill" href="#list-item-5" style="border-color: blueviolet; border-width: 0px 1px 0px 1px;">Opis3</a>
+      <a class="list-group-item d-none d-lg-block list-group-item-action flex-fill" href="#list-item-6" style=" border-color: blueviolet;border-width: 0px 0px 0px 1px;">Opis4</a>
+      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-9" style=" border-color: blueviolet;border-width: 0px 0px 0px 1px;">Specyfikacja</a>
       <a class="list-group-item list-group-item-action flex-fill" href="#list-item-9" style=" border-color: blueviolet;border-width: 0px 0px 0px 1px;">Recencje</a>
     </header>
     <div class="row py-1">
-      <div class="col-lg-2 px-0 d-flex flex-column overflow-scroll" style=" cursor: pointer; max-height: 330px;   overflow-x: hidden !important; /* Hide horizontal scrollbar */">
+      <div class="col-lg-2 px-0 d-none d-lg-flex flex-column overflow-scroll" style=" cursor: pointer; max-height: 330px;   overflow-x: hidden !important; /* Hide horizontal scrollbar */">
         <img src="./pics/151-840x400.jpg" class="d-block w-100" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active">
 
         <img src="./pics/455-840x400.jpg" class="d-block w-100" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1">
@@ -123,15 +275,15 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-inner" style="cursor: pointer;">
+          <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./pics/410-900x500_cr.jpg" class="d-block w-100" onclick="show()" alt="...">
+              <img src="./pics/410-900x500_cr.jpg" class="d-block w-100"  alt="...">
             </div>
             <div class="carousel-item">
-              <img src="./pics/448-900x500_cr.jpg" class="d-block w-100" onclick="show()" alt="...">
+              <img src="./pics/448-900x500_cr.jpg" class="d-block w-100"  alt="...">
             </div>
             <div class="carousel-item">
-              <img src="./pics/1033-900x500_cr.jpg" class="d-block w-100" onclick="show()" alt="...">
+              <img src="./pics/1033-900x500_cr.jpg" class="d-block w-100"  alt="...">
             </div>
             <!-- <div class="carousel-item active">
               <img src="./pics/151-840x400.jpg" class="d-block w-100" onclick="show()" alt="...">
@@ -154,16 +306,17 @@
           </button>
         </div>
       </div>
-      <div class="col-lg-4 px-0 d-flex align-items-stretch" style="border-left: 2px solid blueviolet;">
+      <div class="col-12 col-lg-4 px-0 d-flex align-items-stretch" style="border-left: 2px solid blueviolet;">
         <div class="card" style="background-color: black; color: white;">
           <div class="card-body">
-            <div class="card-title">Intel Core i5-12600K, 3.7GHz, 20 MB, BOX (BX8071512600K)</div>
+            <div class="card-title h4  ">Intel Core i5-12600K, 3.7GHz, 20 MB, BOX (BX8071512600K)</div>
             <in class="card-text d-flex justify-content-between" >
               <small class="text-muted">ID 239048</small> 
               <div>10 available</div> 
             </in>
-            <div class="card-text">
+            <div class="card-text d-flex justify-content-start">
               <h1 class="fw-bold">1200</h1>
+              <p class="align-self-end">PLN</p>
              </div>
             <div class="card-text d-flex justify-content-between">
               <div>
@@ -194,59 +347,124 @@
           </div>
         </div> 
       </div>
+      <!-- <div class="col-12 col-lg-2 px-0 d-flex d-lg-none flex-row overflow-scroll" style=" cursor: pointer; max-width: 100vw;">
+        <img src="./pics/151-840x400.jpg" class="d-block w-100" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active">
+
+        <img src="./pics/455-840x400.jpg" class="d-block w-100" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1">
+        <img src="./pics/290-840x400.jpg" class="d-block w-100" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2">
+        <img src="./pics/290-840x400.jpg" class="d-block w-100" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2">
+
+        <img src="./pics/290-840x400.jpg" class="d-block w-100" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2">
+        <img src="./pics/290-840x400.jpg" class="d-block w-100" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2">
+        
+        <img src="./pics/290-840x400.jpg" class="d-block w-100" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2">
+      </div> -->
     </div>  
     
-    <div class="row" id="list-item-2">
-      <div class="card-group text-center py-1" style="color: white;">
-        <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 1px 0px 0px;">
-          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-          <div class="card-body">
-            
-            <p class="card-text">MSI MEG Z690</p>
-            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
-          </div>
-        </div>
-        <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 1px 0px 1px;">
-          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-          <div class="card-body">
-            
-            <p class="card-text">MSI MEG Z690</p>
-            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
-          </div>
-        </div>
-        <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 1px 0px 1px;">
-          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-          <div class="card-body">
-            
-            <p class="card-text">MSI MEG Z690</p>
-            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
-          </div>
-        </div>
-        <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 1px 0px 1px;">
-          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-          <div class="card-body">
-            
-            <p class="card-text">MSI MEG Z690</p>
-            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
-          </div>
-        </div>
-        <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 1px 0px 1px;">
-          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-          <div class="card-body">
-            
-            <p class="card-text">MSI MEG Z690</p>
-            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
-          </div>
-        </div>
-        <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 0px 0px 1px;">
-          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
-          <div class="card-body">
-            
-            <p class="card-text">MSI MEG Z690</p>
-            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
-          </div>
+    
+  <div class="row d-none d-lg-block">
+    <div class="card-group d-none d-lg-flex text-center py-1" style="color: white;">
+      <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 1px 0px 0px;">
+        <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+        <div class="card-body">
+        
+        <p class="card-text">MSI MEG Z690</p>
+        <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
         </div>
       </div>
+      <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 1px 0px 1px;">
+        <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+        <div class="card-body">
+        
+        <p class="card-text">MSI MEG Z690</p>
+        <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+        </div>
+      </div>
+      <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 1px 0px 1px;">
+        <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+        <div class="card-body">
+        
+        <p class="card-text">MSI MEG Z690</p>
+        <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+        </div>
+      </div>
+      <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 1px 0px 1px;">
+        <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+        <div class="card-body">
+        
+        <p class="card-text">MSI MEG Z690</p>
+        <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+        </div>
+      </div>
+      <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 1px 0px 1px;">
+        <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+        <div class="card-body">
+        
+        <p class="card-text">MSI MEG Z690</p>
+        <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+        </div>
+      </div>
+      <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 0px 0px 1px;">
+        <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+        <div class="card-body">
+        
+        <p class="card-text">MSI MEG Z690</p>
+        <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="row d-block d-lg-none" id="list-item-2" style=" overflow-x: auto; white-space: nowrap; color: white;">
+        <div class="card col-4 noborder" style="  display: inline-block;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <p class="card-text">MSI MEG Z690</p>
+            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+          </div>
+        </div>
+        <div class="card col-4 noborder" style="   display: inline-block;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <p class="card-text">MSI MEG Z690</p>
+            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+          </div>
+        </div>
+        <div class="card col-4 noborder" style="   display: inline-block;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <p class="card-text">MSI MEG Z690</p>
+            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+          </div>
+        </div>
+        <div class="card col-4 noborder" style="   display: inline-block;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <p class="card-text">MSI MEG Z690</p>
+            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+          </div>
+        </div>
+        <div class=" card col-4 noborder" style="   display: inline-block;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <p class="card-text">MSI MEG Z690</p>
+            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+          </div>
+        </div>
+        <div class="card col-4 noborder" style="  display: inline-block;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <p class="card-text">MSI MEG Z690</p>
+            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+          </div>
+        </div>
+
     </div>
 
       <div id="list-item-3">
@@ -296,13 +514,15 @@
         </div>
       </div>
       <div class="row align-items-center py-1" style="background-color: black; color: white;" id="list-item-9">
-        <div class="col-4">
-          <div class="d-flex align-items-baseline">
+        <div class="col-3 col-lg-2">
+
             <h2 class="fw-bold px-1">Recencje</h2>
-            <div>
+
+
+
+        </div>
+        <div class="col-4">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (10)
-            </div>
-          </div>
         </div>
       </div>
 
@@ -563,22 +783,22 @@
   crossorigin="anonymous">
 </script>
 <script>
-  function show() {
-    console.log("ping")
-    let element = document.getElementsByClassName("hidable")[0];
-    let element2 = document.getElementsByClassName("opener")[0];
-    // let element2 = document.getElementsByClassName("hide")[0];
-    element.style.display = "block"; 
-    element2.style.display = "none"; 
-  }
-  function hide() {
-    console.log("ping")
-    let element = document.getElementsByClassName("hidable")[0];
-    let element2 = document.getElementsByClassName("opener")[0];
-    // let element2 = document.getElementsByClassName("hide")[0];
-    element.style.display = "none"; 
-    element2.style.display = "block"; 
-  }
+  // function show() {
+  //   console.log("ping")
+  //   let element = document.getElementsByClassName("hidable")[0];
+  //   let element2 = document.getElementsByClassName("opener")[0];
+  //   // let element2 = document.getElementsByClassName("hide")[0];
+  //   element.style.display = "block"; 
+  //   element2.style.display = "none"; 
+  // }
+  // function hide() {
+  //   console.log("ping")
+  //   let element = document.getElementsByClassName("hidable")[0];
+  //   let element2 = document.getElementsByClassName("opener")[0];
+  //   // let element2 = document.getElementsByClassName("hide")[0];
+  //   element.style.display = "none"; 
+  //   element2.style.display = "block"; 
+  // }
     //do i need to say the same again
   // let currPic = 0;
   // function changePicTwo(num) {
