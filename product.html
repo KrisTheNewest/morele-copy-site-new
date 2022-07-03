@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 </head>
-<body style="background-color: black;">
+<body class="bg-dark">
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" style="border-bottom: 2px solid blueviolet;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -95,7 +95,7 @@
   </div>
 
 
-<main class="container opener" style="background-color: blueviolet;">
+<main class="container opener px-0" style="background-color: blueviolet;">
     <header class="row" style="background-color: black;">
       <div class="col d-flex justify-content-start p-2">
             <div class="breadcrumb-item h5"><a href="#" class="link-light">Home</a></div>
@@ -103,7 +103,7 @@
             <div class="breadcrumb-item active h5 text-primary" aria-current="page">Data</div>
       </div>
     </header>
-    <div class="row">
+    <div class="row py-1">
       <div class="col-lg-2 px-0 d-flex flex-column overflow-scroll" style=" cursor: pointer; max-height: 330px;   overflow-x: hidden !important; /* Hide horizontal scrollbar */">
         <img src="./pics/151-840x400.jpg" class="d-block w-100" alt="..." data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active">
 
@@ -193,52 +193,109 @@
         </div> 
       </div>
     </div>  
-
-
-    <div id="list-example" class="list-group list-group-horizontal sticky-top">
-      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-1">Item 1</a>
-      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-2">Item 2</a>
-      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-3">Item 3</a>
-      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-4">Item 4</a>
+    
+    <div class="row">
+      <div class="card-group text-center py-1" style="color: white;">
+        <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 1px 0px 0px;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <p class="card-text">MSI MEG Z690</p>
+            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+          </div>
+        </div>
+        <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 1px 0px 1px;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <p class="card-text">MSI MEG Z690</p>
+            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+          </div>
+        </div>
+        <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 1px 0px 1px;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <p class="card-text">MSI MEG Z690</p>
+            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+          </div>
+        </div>
+        <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 1px 0px 1px;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <p class="card-text">MSI MEG Z690</p>
+            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+          </div>
+        </div>
+        <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 1px 0px 1px;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <p class="card-text">MSI MEG Z690</p>
+            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+          </div>
+        </div>
+        <div class="card" style="background-color: black; border-color: blueviolet; border-width: 0px 0px 0px 1px;">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            
+            <p class="card-text">MSI MEG Z690</p>
+            <button type="button"  class="btn btn-outline-info btn-sm" style="border-radius: 0; border-color:blueviolet; color: white ;">do koszyka</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="list-example" class="list-group list-group-horizontal sticky-top stickybutton" style="top: 18px;">
+      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-1" style="border-color: blueviolet; border-width: 0px 1px 0px 0px;">Item 1</a>
+      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-2" style="border-color: blueviolet; border-width: 0px 1px 0px 1px;">Item 2</a>
+      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-3" style=" border-color: blueviolet;border-width: 0px 1px 0px 1px;">Item 3</a>
+      <a class="list-group-item list-group-item-action flex-fill" href="#list-item-4" style=" border-color: blueviolet;border-width: 0px 0px 0px 1px;">Item 4</a>
     </div>
     <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
       <div id="list-item-1">
-        <div class="card mb-3">
+        <div class="card my-1 noborder">
         <img src="https://picsum.photos/1300/400" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title" >Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta amet tenetur quod, quibusdam nobis vel dicta maiores qui. Est molestias necessitatibus, aliquam, et sint nihil expedita consequatur facere non esse dolore vero. Sunt corrupti magnam consequuntur dolorem vero distinctio eligendi, veritatis cumque exercitationem asperiores omnis illum ducimus beatae! Odit labore recusandae deleniti iusto doloribus consectetur officia aliquid at soluta illum, omnis, explicabo rem fuga, a quam. Placeat, maxime sequi qui quibusdam vitae veniam odio fugit fugiat consectetur, nisi magnam similique aliquid, quidem odit facilis quis recusandae distinctio? Maiores earum ex dignissimos dolores nam! Non, deserunt. Molestiae porro recusandae tempore voluptates.</p>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab expedita, deleniti iusto dolore officia dolorem corrupti eius illo praesentium doloribus deserunt est modi velit odit eveniet nesciunt accusamus totam neque, dolor numquam molestiae aperiam! Tenetur illum ab laboriosam tempora quos placeat aliquid rem, rerum molestias minima quis sunt assumenda similique!</p>
         </div>
       </div>
       </div>
       <div id="list-item-2">
-        <div class="card mb-3">
-          <img src="https://picsum.photos/1300/400" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title" >Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <div class="card my-1 noborder">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://picsum.photos/500/300" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio repellendus inventore impedit explicabo, itaque laboriosam molestiae quod, culpa veniam reiciendis quos beatae dolorum? Voluptates atque, sunt fuga libero, numquam voluptate ducimus rem earum explicabo vel at nihil eligendi error dolore repudiandae alias molestiae ut corrupti eum mollitia expedita! Provident, dicta!</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div id="list-item-3">
-        <div class="card mb-3">
+        <div class="card my-1 noborder">
           <img src="https://picsum.photos/1300/400" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title" >Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut laboriosam odio quisquam velit, illum sit nemo suscipit voluptatum, exercitationem fugit ex commodi voluptas? Explicabo quibusdam, omnis autem hic nulla quo eius assumenda maxime velit fuga sunt aspernatur reiciendis facere reprehenderit!</p>
+
           </div>
         </div>
       </div>
       <div id="list-item-4">
-        <div class="card mb-3">
+        <div class="card my-1 noborder">
           <img src="https://picsum.photos/1300/400" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title" >Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, totam voluptate inventore laborum doloribus velit quo consequuntur sunt itaque at numquam quisquam nobis quia perspiciatis eius. Qui amet veritatis magni.</p>
+
           </div>
         </div>
       </div>

@@ -6,6 +6,17 @@
     font-weight: normal;
     font-style: normal;
 }
+.noborder {
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: black;
+    color: white;
+}
+.stickybutton > a {
+    border-radius: 0 !important;
+    background-color: black;
+    color: white;
+}
 .unified > li {
     background-color: black; color: white;
     border-radius: 0;
