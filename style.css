@@ -12,10 +12,30 @@
     background-color: black;
     color: white;
 }
+.tab-pane > .card:first-child {
+        background-color: black;
+    color: white;
+    border-radius: 0 !important;
+    border-color: blueviolet;
+    border-width: 0px 0px 2px 0px;
+}
+.tab-pane > .card {
+    background-color: black;
+color: white;
+border-radius: 0 !important;
+border-color: blueviolet;
+border-width: 2px 0px 2px 0px;
+}
 .stickybutton > a {
     border-radius: 0 !important;
     background-color: black;
     color: white;
+}
+ /* top right bottom left   */
+.stickybutton > a.disabled {
+    border-radius: 0 !important;
+    background-color: rgb(73, 73, 73);
+    color: black;
 }
 .unified > li {
     background-color: black; color: white;
