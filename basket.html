@@ -247,7 +247,7 @@
 		</div>
 	  </nav>
 
-	<main class="container" >
+	<main class="container" style="background-color: blueviolet;">
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 			  <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -255,10 +255,10 @@
 			  <li class="breadcrumb-item active" aria-current="page">Data</li>
 			</ol>
 		  </nav>
-		  <div class="row pb-3" style="background-color: black; color: white;">
+		  <div class="row mb-1" style="background-color: black; color: white;">
 			<h1>Koszyk</h1>	
 		  </div>
-		  		<div class="card ">
+		  		<div class="card " style="border: none;">
 					<div class="row" style="color: white; ">
 						<div class="col-2" style="background-color: black; ">
 							<img src="https://picsum.photos/120/120" class="img-fluid" alt="...">
@@ -267,21 +267,19 @@
 						  </div>
 						  <div class="col-6" style="background-color: black; ">
 							<div class="card-body">
-							  <h5 class="card-title">Procesor AMD Ryzen 5 4500, 3.6 GHz, 8 MB, BOX  </h5>
-							  <div class="card-text">1234pln</div>
-							</div>
+								<h5 class="card-title">Procesor AMD Ryzen 5 4500, 3.6 GHz, 8 MB, BOX  </h5>
+								<input type="number" id="typeNumber1" class="form-control w-25" placeholder="1"/>
+							 </div>
 						  </div>
 						  <div class="col-2" style="background-color: black; ">
-							<div class="card-body pt-lg-3">
-							  <div class="card-title"><button type="button" class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></div>
-								<input type="number" id="typeNumber" class="form-control " />
-							  <!-- <label class="form-label" for="typeNumber">Number input</label> -->
-	
+							<div class="card-body">
+								<div class="card-title"><button type="button" class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></div>
+								<span class="card-text h3">1234</span> <span>PLN</span>
 							</div>
 						  </div>
 					</div>	
 				</div>
-				<div class="card ">
+				<div class="card my-1" style="border: none;">
 					<div class="row" style="color: white; ">
 						<div class="col-2" style="background-color: black; ">
 							<img src="https://picsum.photos/120/120" class="img-fluid" alt="...">
@@ -290,21 +288,19 @@
 						  </div>
 						  <div class="col-6" style="background-color: black; ">
 							<div class="card-body">
-							  <h5 class="card-title">Procesor AMD Ryzen 5 4500, 3.6 GHz, 8 MB, BOX  </h5>
-							  <div class="card-text">1234pln</div>
+								<h5 class="card-title">Procesor AMD Ryzen 5 4500, 3.6 GHz, 8 MB, BOX  </h5>
+								<input type="number" id="typeNumber2" class="form-control w-25" placeholder="1"/>
 							</div>
 						  </div>
 						  <div class="col-2" style="background-color: black; ">
-							<div class="card-body pt-lg-3">
-							  <div class="card-title"><button type="button" class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></div>
-								<input type="number" id="typeNumber" class="form-control " />
-							  <!-- <label class="form-label" for="typeNumber">Number input</label> -->
-	
+							<div class="card-body">
+								<div class="card-title"><button type="button" class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></div>
+								<span class="card-text h3">1234</span> <span>PLN</span>
 							</div>
 						  </div>
 					</div>	
 				</div>
-				<div class="card ">
+				<div class="card " style="border: none;">
 					<div class="row" style="color: white; ">
 						<div class="col-2" style="background-color: black; ">
 							<img src="https://picsum.photos/120/120" class="img-fluid" alt="...">
@@ -314,22 +310,20 @@
 						  <div class="col-6" style="background-color: black; ">
 							<div class="card-body">
 							  <h5 class="card-title">Procesor AMD Ryzen 5 4500, 3.6 GHz, 8 MB, BOX  </h5>
-							  <div class="card-text">1234pln</div>
+							  <input type="number" id="typeNumber3" class="form-control w-25" placeholder="1"/>
 							</div>
 						  </div>
 						  <div class="col-2" style="background-color: black; ">
-							<div class="card-body pt-lg-3">
-							  <div class="card-title"><button type="button" class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></div>
-								<input type="number" id="typeNumber" class="form-control " />
-							  <!-- <label class="form-label" for="typeNumber">Number input</label> -->
-	
+							<div class="card-body">
+								<div class="card-title"><button type="button" class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></div>
+								<span class="card-text h3">1234</span> <span>PLN</span>
 							</div>
 						  </div>
 					</div>	
 				</div>
 
-		  <div class="row pb-3 pe-5 text-end" style="background-color: black; color: white;">
-			<h3 >Do zapłaty 4000pnn</h3>	
+		  <div class="row pe-5 text-end my-1" style="background-color: black; color: white;">
+			<h3 >Do zapłaty 4000 PLN</h3>	
 			<p>+ dostawa</p>
 		  </div>
 
@@ -438,9 +432,49 @@
 			</div>
 
 		  </div>
-		  <div class="row" style="background-color: black; color: white;">
-			Total: 4560pln
+		  <div class="row pe-5 text-end mt-1" style="background-color: black; color: white;">
+			<h3 >Do zapłaty 4100 PLN</h3>	
 		  </div>
+		  <div class="row pe-5" style="background-color: black; color: white;">
+			<h3 >Adress</h3>
+		  </div>
+		  <form class="row g-3" style="background-color: black; color: white;">
+			<div class="col-12">
+			  <label for="inputAddress" class="form-label">Adres </label>
+			  <input type="text" class="form-control" id="inputAddress" placeholder="Ulica, numer">
+			</div>
+			<div class="col-12">
+			  <label for="inputAddress2" class="form-label">Adres c.d.</label>
+			  <input type="text" class="form-control" id="inputAddress2" placeholder="Budynek, klatka schodowa">
+			</div>
+			<div class="col-md-2">
+				<label for="inputZip" class="form-label">Kod pocztowy</label>
+				<input type="text" class="form-control" id="inputZip" placeholder="64-000">
+			  </div>
+			<div class="col-md-6">
+			  <label for="inputCity" class="form-label">Miasto</label>
+			  <input type="text" class="form-control" id="inputCity">
+			</div>
+			<div class="col-md-4">
+			  <label for="inputState" class="form-label">Województwo</label>
+			  <select id="inputState" class="form-select">
+				<option selected>Wybierz...</option>
+				<option>pomorskie</option>
+				<option>wielkopolskie</option>
+			  </select>
+			</div>
+			<div class="col-12">
+			  <div class="form-check">
+				<input class="form-check-input" type="checkbox" id="gridCheck">
+				<label class="form-check-label" for="gridCheck">
+				  Zapisz na przyszłość
+				</label>
+			  </div>
+			</div>
+			<div class="col-12">
+			  <button type="submit" class="btn btn-primary">Zamawiam</button>
+			</div>
+		  </form>
 
 	</main>
 </body>
