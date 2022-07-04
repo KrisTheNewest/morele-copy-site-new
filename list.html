@@ -19,18 +19,18 @@
 		  <a class="navbar-brand" href="./">
 			<img src="./pics/morele.svg" alt="" height="30" class="d-inline-block align-text-top">
 		  </a>
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"  aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="multi-collapse collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-			  <nav aria-label="breadcrumb">
+			<div class="navbar-nav me-auto mb-2 mb-lg-0">
+
 				<ol class="breadcrumb mb-0 p-2 pt-3">
 				  <li class="breadcrumb-item h5"><a href="./">Home</a></li>
 				  <li class="breadcrumb-item active h5">Products</li>
 				</ol>
-				</nav>
-			</ul>
+
+			</div>
 			<form class="d-flex">
 			  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 			  <button class="btn btn-outline-success" type="submit">Search</button>
@@ -45,7 +45,7 @@
 		  <button class="btn btn-primary  flex-fill autofillbtn " style="line-height: normal; border-top: 2px solid blueviolet;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSort" >Sort</button>
 		  <button class="btn btn-primary  flex-fill autofillbtn " style="line-height: normal; border-top: 2px solid blueviolet; border-right: none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" >Cart</button>
 
-		<div class="offcanvas offcanvas-end  text-white bg-dark" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas offcanvas-end  text-white bg-dark" tabindex="-1" id="offcanvasCart" >
 		  <div class="offcanvas-header">
 			<h5 id="offcanvasRightLabel">Cart</h5>
 			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -82,7 +82,7 @@
 			</table>
 		  </div>
 		</div>
-		<div class="offcanvas offcanvas-start text-white bg-dark" tabindex="-1" id="offcanvasCategories" aria-labelledby="offcanvasCategories">
+		<div class="offcanvas offcanvas-start text-white bg-dark" tabindex="-1" id="offcanvasCategories" >
 		  <div class="offcanvas-header">
 			<h5 id="offcanvasCategoriesLabel">Categories</h5>
 			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -91,11 +91,11 @@
 			<div class="accordion accordion-flush " id="accordionFlushExample" style="border-left: 2px solid blueviolet; border-top: 2px solid blueviolet;">
 			  <div class="accordion-item">
 				<h2 class="accordion-header" id="flush-headingOne">
-				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" >
 					Accordion Item #1
 				  </button>
 				</h2>
-				<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+				<div id="flush-collapseOne" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
 				  <div class="accordion-body" style="background-color: black;">
 					<a class="dropdown-item test" href="#" >Action</a>
 					<a class="dropdown-item test" href="#" >Another action</a>
@@ -105,11 +105,11 @@
 			  </div>
 			  <div class="accordion-item">
 				<h2 class="accordion-header" id="flush-headingTwo">
-				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" >
 					Accordion Item #2
 				  </button>
 				</h2>
-				<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+				<div id="flush-collapseTwo" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
 				  <div class="accordion-body" style="background-color: black;">
 					<a class="dropdown-item test" href="#" >Action</a>
 					<a class="dropdown-item test" href="#" >Another action</a>
@@ -119,11 +119,11 @@
 			  </div>
 			  <div class="accordion-item">
 				<h2 class="accordion-header" id="flush-headingThree">
-				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" >
 					Accordion Item #3
 				  </button>
 				</h2>
-				<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+				<div id="flush-collapseThree" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
 				  <div class="accordion-body" style="background-color: black;">                
 					<a class="dropdown-item test" href="#" >Action</a>
 					<a class="dropdown-item test" href="#" >Another action</a>
@@ -133,11 +133,11 @@
 			  </div>
 			  <div class="accordion-item">
 				<h2 class="accordion-header" id="flush-headingFour">
-				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseThree">
+				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" >
 					Accordion Item #4
 				  </button>
 				</h2>
-				<div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+				<div id="flush-collapsefour" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
 								<div class="accordion-body" style="background-color: black;">                
 					<a class="dropdown-item test" href="#" >Action</a>
 					<a class="dropdown-item test" href="#" >Another action</a>
@@ -147,11 +147,11 @@
 			  </div>
 			  <div class="accordion-item">
 				<h2 class="accordion-header" id="flush-heading5">
-				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapseThree">
+				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" >
 					Accordion Item #5
 				  </button>
 				</h2>
-				<div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+				<div id="flush-collapse5" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
 								<div class="accordion-body" style="background-color: black;">                
 					<a class="dropdown-item test" href="#" >Action</a>
 					<a class="dropdown-item test" href="#" >Another action</a>
@@ -161,11 +161,11 @@
 			  </div>
 			  <div class="accordion-item">
 				<h2 class="accordion-header" id="flush-heading6">
-				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapseThree">
+				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" >
 					Accordion Item #6
 				  </button>
 				</h2>
-				<div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+				<div id="flush-collapse6" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
 								<div class="accordion-body" style="background-color: black;">                
 					<a class="dropdown-item test" href="#" >Action</a>
 					<a class="dropdown-item test" href="#" >Another action</a>
@@ -175,11 +175,11 @@
 			  </div>
 			  <div class="accordion-item">
 				<h2 class="accordion-header" id="flush-heading7">
-				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapseThree">
+				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" >
 					Accordion Item #7
 				  </button>
 				</h2>
-				<div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+				<div id="flush-collapse7" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
 								<div class="accordion-body" style="background-color: black;">                
 					<a class="dropdown-item test" href="#" >Action</a>
 					<a class="dropdown-item test" href="#" >Another action</a>
@@ -189,11 +189,11 @@
 			  </div>
 			  <div class="accordion-item">
 				<h2 class="accordion-header" id="flush-heading8">
-				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapseThree">
+				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" >
 					Accordion Item #8
 				  </button>
 				</h2>
-				<div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+				<div id="flush-collapse8" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
 								<div class="accordion-body" style="background-color: black;">                
 					<a class="dropdown-item test" href="#" >Action</a>
 					<a class="dropdown-item test" href="#" >Another action</a>
@@ -203,11 +203,11 @@
 			  </div>
 			  <div class="accordion-item">
 				<h2 class="accordion-header" id="flush-heading9">
-				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapseThree">
+				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" >
 					Accordion Item #9
 				  </button>
 				</h2>
-				<div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+				<div id="flush-collapse9" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
 								<div class="accordion-body" style="background-color: black;">                
 					<a class="dropdown-item test" href="#" >Action</a>
 					<a class="dropdown-item test" href="#" >Another action</a>
@@ -217,11 +217,11 @@
 			  </div>
 			  <div class="accordion-item">
 				<h2 class="accordion-header" id="flush-heading10">
-				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapseThree">
+				  <button class="accordion-button collapsed autofillbtn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" >
 					Accordion Item #10
 				  </button>
 				</h2>
-				<div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+				<div id="flush-collapse10" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
 								<div class="accordion-body" style="background-color: black;">                
 					<a class="dropdown-item test" href="#" >Action</a>
 					<a class="dropdown-item test" href="#" >Another action</a>
@@ -232,7 +232,7 @@
 			</div>
 		  </div>
 		</div>
-		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasSort" aria-labelledby="offcanvasBottomLabel">
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasSort" >
 			<div class="offcanvas-header">
 			  <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
 			  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -257,9 +257,9 @@
 
 					<div class="list-group mb-3" id="list-prod" role="tablist">
 						<a class="list-group-item">Producenci</a>
-						<a class="list-group-item list-group-item-action " id="list-prod-alloff" data-bs-toggle="list" href="#list-prod-all-targetoff" role="tab" aria-controls="list-home">Wszyscy</a>
-						<a class="list-group-item list-group-item-action " id="list-amdoff" data-bs-toggle="list" href="#list-amd-targetoff" role="tab" aria-controls="list-home">AMD</a>
-						<a class="list-group-item list-group-item-action " id="list-intoff" data-bs-toggle="list" href="#list-int-targetoff" role="tab" aria-controls="list-profile">Intel</a>
+						<a class="list-group-item list-group-item-action " id="list-prod-alloff" data-bs-toggle="list" href="#list-prod-all-targetoff" role="tab" >Wszyscy</a>
+						<a class="list-group-item list-group-item-action " id="list-amdoff" data-bs-toggle="list" href="#list-amd-targetoff" role="tab" >AMD</a>
+						<a class="list-group-item list-group-item-action " id="list-intoff" data-bs-toggle="list" href="#list-int-targetoff" role="tab" >Intel</a>
   
 					  </div>
 					
@@ -291,15 +291,15 @@
 
 					<div class="list-group mb-3" id="list-prodoff" role="tablist">
 					  <a class="list-group-item">Producenci</a>
-					  <a class="list-group-item list-group-item-action" id="list-prod-all" data-bs-toggle="list" href="#list-prod-all-target" role="tab" aria-controls="list-home">Wszyscy</a>
-					  <a class="list-group-item list-group-item-action" id="list-amd" data-bs-toggle="list" href="#list-amd-target" role="tab" aria-controls="list-home">AMD</a>
-					  <a class="list-group-item list-group-item-action" id="list-int" data-bs-toggle="list" href="#list-int-target" role="tab" aria-controls="list-profile">Intel</a>
+					  <a class="list-group-item list-group-item-action" id="list-prod-all" data-bs-toggle="list" href="#list-prod-all-target" role="tab" >Wszyscy</a>
+					  <a class="list-group-item list-group-item-action" id="list-amd" data-bs-toggle="list" href="#list-amd-target" role="tab" >AMD</a>
+					  <a class="list-group-item list-group-item-action" id="list-int" data-bs-toggle="list" href="#list-int-target" role="tab" >Intel</a>
 					</div>
 					
 			</div>
 			<div class="col-lg-8 mx-0">
 				<div class="tab-content" id="nav-tabContent">
-					<div class="tab-pane fade show active" id="list-prod-all-target" role="tabpanel" aria-labelledby="list-home-list">
+					<div class="tab-pane fade show active" id="list-prod-all-target" role="tabpanel" >
 					<div class="row">
 						<div class="col-4" style="background-color: black;">
 							<img src="https://picsum.photos/600/400" class="img-fluid" alt="...">
@@ -383,7 +383,7 @@
 						  </div>
 					</div>							
 					</div>
-					<div class="tab-pane fade" id="list-amd-target" role="tabpanel" aria-labelledby="list-profile-list">
+					<div class="tab-pane fade" id="list-amd-target" role="tabpanel" >
 						<div class="row">
 							<div class="col-4" style="background-color: black;">
 								<img src="https://picsum.photos/600/400" class="img-fluid" alt="...">
@@ -425,7 +425,7 @@
 							  </div>
 						</div>	
 					</div>
-					<div class="tab-pane fade" id="list-int-target" role="tabpanel" aria-labelledby="list-profile-list">
+					<div class="tab-pane fade" id="list-int-target" role="tabpanel" >
 						<div class="row">
 							<div class="col-4" style="background-color: black;">
 								<img src="https://picsum.photos/600/400" class="img-fluid" alt="...">
@@ -473,7 +473,7 @@
 		  
 		  <div class="row d-flex d-lg-none">
 			<div class="tab-content" id="nav-tabContent2">
-			<div class="tab-pane fade show active" id="list-prod-all-targetoff" role="tabpanel" aria-labelledby="list-home-list">
+			<div class="tab-pane fade show active" id="list-prod-all-targetoff" role="tabpanel" >
 
 
 					<div class="card">
@@ -525,7 +525,7 @@
 				  </div>
 				</div>		
 			  </div>
-			  <div class="tab-pane fade" id="list-amd-targetoff" role="tabpanel" aria-labelledby="list-home-list">
+			  <div class="tab-pane fade" id="list-amd-targetoff" role="tabpanel" >
 				  <div class="card">
 					  <img src="https://picsum.photos/1000/200" class="card-img-top" alt="...">
 					  <div class="card-body text-center">
@@ -558,7 +558,7 @@
 				</div>
   
 			  </div>
-			  <div class="tab-pane fade" id="list-int-targetoff" role="tabpanel" aria-labelledby="list-home-list">
+			  <div class="tab-pane fade" id="list-int-targetoff" role="tabpanel" >
   
 					<!-- <div class="card" >
 					  <div class="card-body">
